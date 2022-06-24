@@ -1,33 +1,23 @@
 import streamlit as st
 from streamlit_chat import message
 import pandas as pd
-from backend import test_gpt3_integration
+from backend import gpt3_answer
 
 # main part
-st.title('Clinical Wise')
+st.title('Trial Connect')
 st.subheader('Helping people find clinical trials')
 
-st.write("Lorem Ipsum")
+st.write("Are you struggling to find the best clinical trial suitable for you? We are here to help!")
 
-input_text = st.text_area('Paste your text here:', height=200)
+city = st.selectbox(
+    'Which city do you live in?', ["Frankfurt", "Berlin", "Munich"])
 
-language_choices = pd.DataFrame({
-    'languages': ["German", "English"]
-})
-
-language = st.selectbox(
-    'Which language do you prefer?', language_choices['languages'])
-
-bt_gpt3 = st.button('GPT-3')
-
-if bt_gpt3:
-    output_text = test_gpt3_integration(input_text)
-
-    st.write("__Output text:__")
-    st.write(output_text)
-
-message("My message")
-message("Hello bot!", is_user=True)
+message("Hi and welcome to Trial Connect. How can I help you?")
+input_text = st.text_area('Your input:', height=100)
+bt_send = st.button('Send')
+if bt_send:
+    output_text = gpt3_answer(input_text)
+    message(output_text)
 
 # Sidebar
 st.sidebar.header("HerHackathon 2022")
