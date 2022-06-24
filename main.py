@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_chat import message
 import pandas as pd
 from backend import test_gpt3_integration
 
@@ -24,6 +25,9 @@ if bt_gpt3:
 
     st.write("__Output text:__")
     st.write(output_text)
+
+message("My message")
+message("Hello bot!", is_user=True)
 
 # Sidebar
 st.sidebar.header("HerHackathon 2022")
