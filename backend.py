@@ -2,7 +2,7 @@ import os
 import openai
 
 def gpt3_answer(text):
-    os.environ["OPENAI_API_KEY"] = "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"
+    os.environ["OPENAI_API_KEY"] = "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"
     openai.api_key = os.getenv("OPENAI_API_KEY")
 
     prompt = f"I am a chatbot and my customer just asked me: \n \"\"\" {text} \n \"\"\" " \
