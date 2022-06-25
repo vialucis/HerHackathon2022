@@ -3,3 +3,4 @@ pandas
 requests
 openai
 streamlit-chat
+translate-api
