@@ -1,8 +1,9 @@
 import os
 import openai
+import streamlit as st
 
 def gpt3_answer(text):
-    os.environ["OPENAI_API_KEY"] = ""
+    os.environ["OPENAI_API_KEY"] = st.secrets["API_KEY"]
     openai.api_key = os.getenv("OPENAI_API_KEY")
 
     prompt = f"I am a chatbot and my customer just asked me: \n \"\"\" {text} \n \"\"\" " \
