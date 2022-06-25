@@ -4,7 +4,9 @@ import pandas as pd
 from backend import gpt3_answer
 
 # Sidebar
-st.sidebar.title("HerHackathon 2022, Merck Challenge")
+st.sidebar.title("HerHackathon 2022")
+st.sidebar.subheader("Merck Challenge")
+
 def home_page():
     st.markdown("# :mailbox: 🎈")
     st.sidebar.markdown("# :mailbox: 🎈")
@@ -22,10 +24,10 @@ page_names_to_funcs = {
     "Main Page": home_page,
     "Page 2": contact,
     "Page 3": about,
-    
-   
 }
+
 # main part
+st.image('images/TrialConnectLogo/2x/PNG/Logo@2x.png', width=200, output_format='PNG')
 st.title('Trial Connect')
 st.subheader('Helping people find clinical trials')
 

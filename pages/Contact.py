@@ -1,6 +1,9 @@
 import streamlit as st
+
 # Sidebar
-st.sidebar.title("HerHackathon 2022, Merck Challenge")
+st.sidebar.title("HerHackathon 2022")
+st.sidebar.subheader("Merck Challenge")
+
 st.header(":mailbox: Get in Touch with me!")
 
 contact_form="""
