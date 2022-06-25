@@ -4,6 +4,7 @@ import pandas as pd
 from backend import gpt3_answer
 
 # Sidebar
+st.sidebar.image('images/Trial_Connect_Logo_Logo.png', width=200, output_format='PNG')
 st.sidebar.title("HerHackathon 2022")
 st.sidebar.subheader("Merck Challenge")
 
@@ -27,7 +28,7 @@ page_names_to_funcs = {
 }
 
 # main part
-st.image('images/TrialConnectLogo/2x/PNG/Logo@2x.png', width=200, output_format='PNG')
+st.image('images/Trial_Connect_Logo_Logo.png', width=200, output_format='PNG')
 st.title('Trial Connect')
 st.subheader('Helping people find clinical trials')
 
@@ -36,6 +37,8 @@ st.write("Are you struggling to find the best clinical trial suitable for you? W
 city = st.selectbox(
     'Which city do you live in?', ["Frankfurt", "Berlin", "Munich"])
 
+language = st.selectbox(
+    'Which language do you prefer?', ["English", "German", "Arabic", "Chinese"])
 
 message("Hi and welcome to Trial Connect. How can I help you?")
 input_text = st.text_area('Your input:', height=100)
