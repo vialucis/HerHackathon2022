@@ -1,4 +1,4 @@
-# HerHackathon2022
+# TrialConnect_MerckChallenge2022
 
 Start website here: 
 https://vialucis-herhackathon2022-home-my0ey8.streamlitapp.com/ or scan the QR-code
@@ -24,5 +24,5 @@ streamlit run Home.py
 https://miro.com/app/board/uXjVOq6Dxr4=/?share_link_id=919087880439
 # Figma Persona
 https://www.figma.com/proto/en9vujKXcBjVLA945dBVVC/User-Journey-Map---Trial-Connect?node-id=12%3A528&scaling=min-zoom&page-id=0%3A1
-# Figma USer Journey
+# Figma User Journey
 https://www.figma.com/proto/en9vujKXcBjVLA945dBVVC/User-Journey-Map-Trial-Connect?node-id=12%3A528&scaling=min-zoom&page-id=0%3A1
