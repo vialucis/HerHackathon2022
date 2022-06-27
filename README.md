@@ -22,7 +22,5 @@ streamlit run Home.py
 
 # Miroboard Brainstorming
 https://miro.com/app/board/uXjVOq6Dxr4=/?share_link_id=919087880439
-# Figma Persona
-https://www.figma.com/proto/en9vujKXcBjVLA945dBVVC/User-Journey-Map---Trial-Connect?node-id=12%3A528&scaling=min-zoom&page-id=0%3A1
 # Figma User Journey
-https://www.figma.com/proto/en9vujKXcBjVLA945dBVVC/User-Journey-Map-Trial-Connect?node-id=12%3A528&scaling=min-zoom&page-id=0%3A1
+https://www.figma.com/file/en9vujKXcBjVLA945dBVVC/User-Journey-Map---Trial-Connect?node-id=0%3A1
